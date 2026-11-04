@@ -1,0 +1,31 @@
+{
+  "name": "computingmaster",
+  "version": "1.0.0",
+  "description": "COMP3421 Web Application Design and Development  Final Project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ada-Yip/ComputingMaster.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Ada-Yip/ComputingMaster/issues"
+  },
+  "homepage": "https://github.com/Ada-Yip/ComputingMaster#readme",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.118.0",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
