@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComputingMaster - Select Quiz</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>ComputingMaster</h1>
+        <p>Select Your Topic</p>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2>Available Topics</h2>
+            <div id="loading" style="margin-top: 2rem;">Loading topics...</div>
+            <div id="topics-container" class="topics-grid" style="display: none;"></div>
+            <div style="margin-top: 2rem;">
+                <a href="index.html" class="btn">&larr; Back</a>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/api.js"></script>
+    <script src="js/select.js"></script>
+</body>
+</html>

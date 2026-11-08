@@ -242,6 +242,44 @@ main {
     gap: 1rem;
 }
 
+.topics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.topic-card {
+    background: #fdfbf7;
+    border: 2px solid #d1c7b7;
+    border-radius: 4px;
+    padding: 2rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #3e3226;
+    transition: all 0.2s;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.topic-card:hover {
+    border-color: #5a3e2b;
+    background: #f4ecd8;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(80, 60, 30, 0.1);
+}
+
+.topic-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: #5a3e2b;
+}
+
+.topic-card p {
+    font-size: 0.9rem;
+    color: #8b7355;
+}
+
 @media (max-width: 600px) {
     header h1 {
         font-size: 1.6rem;
