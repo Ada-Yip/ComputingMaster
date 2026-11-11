@@ -113,6 +113,7 @@ main {
     color: #f4ecd8;
 }
 
+/* Practice Page */
 .quiz-header {
     display: flex;
     justify-content: space-between;
@@ -242,6 +243,7 @@ main {
     gap: 1rem;
 }
 
+/* Select Page */
 .topics-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -280,6 +282,61 @@ main {
     color: #8b7355;
 }
 
+/* Dashboard Page */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    background: #faf6ee;
+    border: 1px solid rgba(160, 130, 90, 0.25);
+    border-radius: 4px;
+    padding: 2.5rem, 1rem;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(80, 60, 30, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.stat-card h3 {
+    font-size: 1rem;
+    color: #8b7355;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: normal;
+}
+
+.stat-card .value {
+    font-size: 2.5rem;
+    color: #5a3e2b;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.charts-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.chart-card {
+    padding: 1.5rem;
+}
+
+.chart-card h3 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #5a3e2b;
+    text-align: center;
+    border-bottom: 1px dashed #d1c7b7;
+    padding-bottom: 0.5rem;
+}
+
 @media (max-width: 600px) {
     header h1 {
         font-size: 1.6rem;
@@ -304,5 +361,8 @@ main {
     }
     .option:hover {
         transform: none;
+    }
+    .charts-container {
+        grid-template-columns: 1fr;
     }
 }

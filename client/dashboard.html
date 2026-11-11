@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComputingMaster - Dashboard</title>
+    <link rel="icon" type="image/svg+xml" href="icon.svg">
+    <link rel="stylesheet" href="style.css">
+    <!-- Include Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>ComputingMaster</h1>
+        <p>Your Progress Dashboard</p>
+    </header>
+
+    <main>
+        <div id="loading" class="card">
+            <p>Loading your progress data...</p>
+        </div>
+
+        <div id="dashboard-content" style="display: none;">
+            <div class="stats-grid" id="overview-stats">
+            </div>
+
+            <!-- Charts -->
+            <div class="charts-container">
+                <div class="card chart-card">
+                    <h3>Topic Proficiency</h3>
+                    <canvas id="proficiencyChart"></canvas>
+                </div>
+                
+                <div class="card chart-card">
+                    <h3>Score History</h3>
+                    <canvas id="historyChart"></canvas>
+                </div>
+            </div>
+
+            <div style="margin-top: 2rem; text-align: center;">
+                <a href="index.html" class="btn btn-secondary">&larr; Back to Home</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>COMP3421 Final Project</p>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
